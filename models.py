@@ -17,6 +17,7 @@ class Categorias(Base):
     __tablename__ = 'categorias'
     cat_codigo = Column(Integer, primary_key=True, autoincrement=True)
     cat_nome = Column(String(100), nullable=False)
+    cat_subcategoria = Column(String(100), nullable=False)
 
 class Produtos(Base):
     __tablename__ = 'produtos'
